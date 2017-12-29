@@ -32,7 +32,6 @@
             this.mięso = new System.Windows.Forms.CheckedListBox();
             this.nabiał = new System.Windows.Forms.CheckedListBox();
             this.zboża = new System.Windows.Forms.CheckedListBox();
-            this.owoce = new System.Windows.Forms.CheckedListBox();
             this.inne = new System.Windows.Forms.CheckedListBox();
             this.dzialanie = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -94,14 +93,6 @@
             this.zboża.Size = new System.Drawing.Size(120, 169);
             this.zboża.TabIndex = 4;
             // 
-            // owoce
-            // 
-            this.owoce.FormattingEnabled = true;
-            this.owoce.Location = new System.Drawing.Point(516, 12);
-            this.owoce.Name = "owoce";
-            this.owoce.Size = new System.Drawing.Size(120, 169);
-            this.owoce.TabIndex = 5;
-            // 
             // inne
             // 
             this.inne.FormattingEnabled = true;
@@ -113,7 +104,7 @@
             "koncentrat pomidorowy",
             "sos pomidorowy",
             "cukier"});
-            this.inne.Location = new System.Drawing.Point(642, 12);
+            this.inne.Location = new System.Drawing.Point(516, 12);
             this.inne.Name = "inne";
             this.inne.Size = new System.Drawing.Size(135, 169);
             this.inne.TabIndex = 6;
@@ -144,7 +135,6 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.dzialanie);
             this.Controls.Add(this.inne);
-            this.Controls.Add(this.owoce);
             this.Controls.Add(this.zboża);
             this.Controls.Add(this.nabiał);
             this.Controls.Add(this.mięso);
@@ -161,7 +151,6 @@
         private System.Windows.Forms.CheckedListBox mięso;
         private System.Windows.Forms.CheckedListBox nabiał;
         private System.Windows.Forms.CheckedListBox zboża;
-        private System.Windows.Forms.CheckedListBox owoce;
         private System.Windows.Forms.CheckedListBox inne;
         private System.Windows.Forms.Button dzialanie;
         private System.Windows.Forms.ListView listView1;
