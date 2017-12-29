@@ -1,0 +1,10 @@
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.csprojResolveAssemblyReference.cache
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.Form1.resources
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.Properties.Resources.resources
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.csproj.GenerateResource.Cache
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\bin\Debug\książkakucharska.exe.config
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\bin\Debug\książkakucharska.exe
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\bin\Debug\książkakucharska.pdb
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.exe
+C:\Users\Łukasz\Desktop\Studia\Systemy wiedzy\książkakucharska\książkakucharska\obj\Debug\książkakucharska.pdb
