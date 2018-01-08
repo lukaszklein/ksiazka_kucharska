@@ -35,6 +35,7 @@
             this.inne = new System.Windows.Forms.CheckedListBox();
             this.dzialanie = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.lista_przepisow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // warzywa
@@ -116,7 +117,7 @@
             this.dzialanie.Name = "dzialanie";
             this.dzialanie.Size = new System.Drawing.Size(75, 23);
             this.dzialanie.TabIndex = 7;
-            this.dzialanie.Text = "dzialaj";
+            this.dzialanie.Text = "Działaj";
             this.dzialanie.UseVisualStyleBackColor = true;
             this.dzialanie.Click += new System.EventHandler(this.dzialanie_Click);
             // 
@@ -124,15 +125,26 @@
             // 
             this.listView1.Location = new System.Drawing.Point(600, 218);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(300, 175);
+            this.listView1.Size = new System.Drawing.Size(250, 175);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // lista_przepisow
+            // 
+            this.lista_przepisow.Location = new System.Drawing.Point(291, 237);
+            this.lista_przepisow.Name = "lista_przepisow";
+            this.lista_przepisow.Size = new System.Drawing.Size(75, 23);
+            this.lista_przepisow.TabIndex = 9;
+            this.lista_przepisow.Text = "Przepisy";
+            this.lista_przepisow.UseVisualStyleBackColor = true;
+            this.lista_przepisow.Click += new System.EventHandler(this.lista_przepisow_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 405);
+            this.Controls.Add(this.lista_przepisow);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.dzialanie);
             this.Controls.Add(this.inne);
@@ -155,6 +167,7 @@
         private System.Windows.Forms.CheckedListBox inne;
         private System.Windows.Forms.Button dzialanie;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button lista_przepisow;
     }
 }
 
