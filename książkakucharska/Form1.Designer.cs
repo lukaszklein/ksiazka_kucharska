@@ -75,7 +75,8 @@
             this.nabiał.Items.AddRange(new object[] {
             "jajka",
             "ser",
-            "śmietana"});
+            "śmietana",
+            "mleko"});
             this.nabiał.Location = new System.Drawing.Point(264, 12);
             this.nabiał.Name = "nabiał";
             this.nabiał.Size = new System.Drawing.Size(120, 169);

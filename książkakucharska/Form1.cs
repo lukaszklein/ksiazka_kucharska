@@ -13,8 +13,19 @@ namespace książkakucharska
 {
     public partial class Form1 : Form
     {
+        public void CreateList()
+        {
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.FullRowSelect = true;
+            listView1.Columns.Add("Danie", 100);
+            listView1.Columns.Add("Składniki", 150);
+        }
+
         public void ShowDish(Stack Ing, string Dish)//funkcja przyjmująca składniki i nazwę dania do wyświetlenia w listview
         {
+            listView1.Clear();
+            CreateList();
             bool IsFirst = true;
             string[] arr = new string[2];
             ListViewItem itm;
@@ -43,15 +54,12 @@ namespace książkakucharska
         public Form1()
         {
             InitializeComponent();
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
-            listView1.Columns.Add("Danie", 100);
-            listView1.Columns.Add("Składniki", 200);
+            CreateList();
         }
 
         private void dzialanie_Click(object sender, EventArgs e)
         {
+
             if (nabiał.GetItemCheckState(0).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
@@ -59,7 +67,10 @@ namespace książkakucharska
                 ShowDish(Ingredients, "jajecznica");
             }
 
-            if (inne.GetItemCheckState(0).ToString() == "Checked" && warzywa.GetItemCheckState(0).ToString() == "Checked" && mięso.GetItemCheckState(0).ToString() == "Checked" & zboża.GetItemCheckState(0).ToString() == "Checked")
+            if (inne.GetItemCheckState(0).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(0).ToString() == "Checked" && 
+                mięso.GetItemCheckState(0).ToString() == "Checked" && 
+                zboża.GetItemCheckState(0).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("pomidory");
@@ -69,7 +80,13 @@ namespace książkakucharska
                 ShowDish(Ingredients, "spaghetti");
             }
 
-            if (warzywa.GetItemCheckState(1).ToString() == "Checked" && warzywa.GetItemCheckState(2).ToString() == "Checked" && warzywa.GetItemCheckState(3).ToString() == "Checked" && mięso.GetItemCheckState(1).ToString() == "Checked" && inne.GetItemCheckState(1).ToString() == "Checked" && inne.GetItemCheckState(2).ToString() == "Checked" && inne.GetItemCheckState(3).ToString() == "Checked")
+            if (warzywa.GetItemCheckState(1).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(2).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(3).ToString() == "Checked" && 
+                mięso.GetItemCheckState(1).ToString() == "Checked" && 
+                inne.GetItemCheckState(1).ToString() == "Checked" && 
+                inne.GetItemCheckState(2).ToString() == "Checked" && 
+                inne.GetItemCheckState(3).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("kukurydza");
@@ -82,7 +99,10 @@ namespace książkakucharska
                 ShowDish(Ingredients, "gyros");
             }
 
-            if (warzywa.GetItemCheckState(4).ToString() == "Checked" && mięso.GetItemCheckState(0).ToString() == "Checked" && mięso.GetItemCheckState(2).ToString() == "Checked" && inne.GetItemCheckState(4).ToString() == "Checked")
+            if (warzywa.GetItemCheckState(4).ToString() == "Checked" && 
+                mięso.GetItemCheckState(0).ToString() == "Checked" && 
+                mięso.GetItemCheckState(2).ToString() == "Checked" && 
+                inne.GetItemCheckState(4).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("kapusta kiszona");
@@ -92,7 +112,10 @@ namespace książkakucharska
                 ShowDish(Ingredients, "bigos");
             }
 
-            if (warzywa.GetItemCheckState(5).ToString() == "Checked" && mięso.GetItemCheckState(0).ToString() == "Checked" && nabiał.GetItemCheckState(0).ToString() == "Checked" && zboża.GetItemCheckState(1).ToString() == "Checked")
+            if (warzywa.GetItemCheckState(5).ToString() == "Checked" && 
+                mięso.GetItemCheckState(0).ToString() == "Checked" && 
+                nabiał.GetItemCheckState(0).ToString() == "Checked" && 
+                zboża.GetItemCheckState(1).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("ziemniaki");
@@ -102,7 +125,10 @@ namespace książkakucharska
                 ShowDish(Ingredients, "kotlety schabowe");
             }
 
-            if (warzywa.GetItemCheckState(6).ToString() == "Checked" && warzywa.GetItemCheckState(7).ToString() == "Checked" && mięso.GetItemCheckState(3).ToString() == "Checked" && inne.GetItemCheckState(0).ToString() == "Checked")
+            if (warzywa.GetItemCheckState(6).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(7).ToString() == "Checked" && 
+                mięso.GetItemCheckState(3).ToString() == "Checked" && 
+                inne.GetItemCheckState(0).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("cebula");
@@ -112,7 +138,11 @@ namespace książkakucharska
                 ShowDish(Ingredients, "ryba po grecku");
             }
 
-            if (warzywa.GetItemCheckState(0).ToString() == "Checked" && warzywa.GetItemCheckState(8).ToString() == "Checked" && warzywa.GetItemCheckState(9).ToString() == "Checked" && mięso.GetItemCheckState(1).ToString() == "Checked" && zboża.GetItemCheckState(2).ToString() == "Checked")
+            if (warzywa.GetItemCheckState(0).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(8).ToString() == "Checked" && 
+                warzywa.GetItemCheckState(9).ToString() == "Checked" && 
+                mięso.GetItemCheckState(1).ToString() == "Checked" && 
+                zboża.GetItemCheckState(2).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("pomidory");
@@ -123,7 +153,11 @@ namespace książkakucharska
                 ShowDish(Ingredients, "tortilla");
             }
 
-            if (nabiał.GetItemCheckState(2).ToString() == "Checked" && nabiał.GetItemCheckState(1).ToString() == "Checked" && zboża.GetItemCheckState(0).ToString() == "Checked" && mięso.GetItemCheckState(0).ToString() == "Checked" && inne.GetItemCheckState(6).ToString() == "Checked")
+            if (nabiał.GetItemCheckState(2).ToString() == "Checked" && 
+                nabiał.GetItemCheckState(1).ToString() == "Checked" && 
+                zboża.GetItemCheckState(0).ToString() == "Checked" && 
+                mięso.GetItemCheckState(0).ToString() == "Checked" && 
+                inne.GetItemCheckState(6).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("makaron");
@@ -134,7 +168,11 @@ namespace książkakucharska
                 ShowDish(Ingredients, "lasagne");
             }
 
-            if (nabiał.GetItemCheckState(2).ToString() == "Checked" && nabiał.GetItemCheckState(1).ToString() == "Checked" && zboża.GetItemCheckState(0).ToString() == "Checked" && mięso.GetItemCheckState(0).ToString() == "Checked" && inne.GetItemCheckState(6).ToString() == "Checked")
+            if (nabiał.GetItemCheckState(2).ToString() == "Checked" && 
+                nabiał.GetItemCheckState(1).ToString() == "Checked" && 
+                zboża.GetItemCheckState(0).ToString() == "Checked" && 
+                mięso.GetItemCheckState(0).ToString() == "Checked" && 
+                inne.GetItemCheckState(6).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("makaron");
@@ -145,7 +183,10 @@ namespace książkakucharska
                 ShowDish(Ingredients, "lasagne");
             }
 
-            if (nabiał.GetItemCheckState(3).ToString() == "Checked" && zboża.GetItemCheckState(1).ToString() == "Checked" && nabiał.GetItemCheckState(0).ToString() == "Checked" && inne.GetItemCheckState(6).ToString() == "Checked")
+            if (nabiał.GetItemCheckState(3).ToString() == "Checked" && 
+                zboża.GetItemCheckState(1).ToString() == "Checked" && 
+                nabiał.GetItemCheckState(0).ToString() == "Checked" && 
+                inne.GetItemCheckState(6).ToString() == "Checked")
             {
                 Stack Ingredients = new Stack();
                 Ingredients.Push("mąka");
